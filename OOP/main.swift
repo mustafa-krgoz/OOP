@@ -240,3 +240,22 @@ class Dikdortgen {
 var dikdortgen = Dikdortgen(ku: 25)
 print(dikdortgen.kenarUzunlugu)
 
+// Enum
+
+enum Cinsiyet : String {
+    
+    case Erkek = "E"
+    case Kadın = "K"
+}
+
+var c = Cinsiyet.Kadın
+
+if c == Cinsiyet.Erkek{
+    print("Cinsiyet Erkektir.")
+}
+else {
+    print("Cinsiyet Kadındır.")
+}
+
+print(Cinsiyet.Erkek.rawValue)
+
